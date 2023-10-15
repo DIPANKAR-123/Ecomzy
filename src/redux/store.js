@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import CounterSlice from './slices/CounterSlice'
+import CartSlice from '../redux/slices/CartSlice'
 
 export const store= configureStore({
   reducer: {
     // key value pairs
-    counter: CounterSlice,
-    
+    cart: CartSlice
+    // name of slice and name of slice jsx file
   },
 })
