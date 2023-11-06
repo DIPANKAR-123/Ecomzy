@@ -9,14 +9,14 @@ function Navbar() {
     <div className="w-screen ">
        
        {/* {toast.success("hello ji")} */}
-      <div className=" pt-4 pb-4 flex flex-row pl-[50px] justify-between   bg-black pr-12 w-full ">
+      <div className=" pt-4 pb-4 flex flex-row md:pl-[50px] mr-3 md:mr-0 justify-between  bg-black pr-12 w-full ">
       <NavLink to="/">
-        <div className="ml-5">
+        <div className="md:ml-5 -ml-1 ">
           <img src="logo.png" width="200px" alt="" />
         </div>
       </NavLink>
         
-        <div className="flex items-center font-medium text-slate-100 mr-5 space-x-6">
+        <div className="flex items-center font-medium text-slate-100  mr-0 md:mr-0 space-x-6">
           
           <NavLink to="/">
           <p className="text-white">Home</p>

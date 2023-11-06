@@ -12,15 +12,15 @@ function CartItem({item,itemIndex}) {
     }
   return (
     <div className="flex flex-col  md:w-[450px] mt-6  justify-center items-center  h-[230px] rounded-[30px] shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] ">
-    <div className=" ml-6 flex gap-8 mt-8 h-[3000px] w-[290px] md:w-full  ">
+    <div className=" ml-6 flex gap-8 mt-8 h-[300px] w-[290px] md:w-full  md:justify-center md:items-center ">
       <div className="">
-        <img src={item.image}  className=" mt-4 h-[120px] w-[170px] " />
+        <img src={item.image}  className=" md:-mt-6 mt-4     h-[120px] w-[170px] " />
       </div>
-      <div className="h-[150px] ">
+      <div className="md:h-[180px] h-[250px]   ">
         <h1 className="text-gray-700 font-semibold text-lg text-left truncate w-16 mt-1">
           {item.title}
         </h1>
-        <h1 className="w-20 text-gray-500 font-normal text-[12px] text-left">
+        <h1 className="xl:w-40 w-20 text-gray-500 font-normal text-[12px] text-left">
           {item.description.split(" ").slice(0, 10).join(" ") + "..."}
         </h1>
         <div className="flex justify-between mt-4">

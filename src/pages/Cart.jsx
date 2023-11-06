@@ -10,21 +10,21 @@ function Cart() {
    setTotalAmout(cart.reduce((acc,curr)=>acc+curr.price,0));
     },[cart])
   return (
-    <div className="flex justify-center ml-8 mt-8 lg:ml-72 gap-10 items-center  max-w-[300px] ">
+    <div className="flex justify-center ml-8 mt-8 lg:ml-72 gap-16 items-center  max-w-[300px] ">
     {cart.length > 0 ? (
-      <div className="flex  justify-center items-center gap-4 lg:flex-row flex-col">
+      <div className="flex  justify-center items-center gap-16 lg:flex-row flex-col">
         <div>
           {cart.map((item, index) => {
             return (
-              <div className=" flex  w-[350px] md:w-full flex-col gap-2">
+              <div className=" flex  w-[350px] md:w-full flex-col gap-72 ">
                 <CartItem key={item.id} item={item} itemIndex={index} />
               </div>
             );
           })}
         </div>
         
-        <div className="flex md:absolute    mr-1 max-h-[200px]
-         flex-col right-72 justify-between    lg:ml-96 h-[500px]   ">
+        <div className="flex md:absolute  mr-1 max-h-[200px]
+         flex-col right-72 justify-between lg:ml-96 h-[500px]   ">
           <div>
             <div className="text-green-600">Your Cart</div>
             <div className="text-green-600 font-bold text-[40px]">
@@ -36,7 +36,7 @@ function Cart() {
               </span>
             </p>
           </div>
-          <div>
+          <div className='mb-4'>
             <p>
               Total Amount : ${totalAmount}
               <p />
